@@ -160,7 +160,7 @@ object ShapelessBuild extends Build {
         "-language:implicitConversions",
         "-deprecation",
         "-unchecked"),
-
+      scalacOptions += "-Xplugin:/home/vlad/scala-projects/printPlugin/target/scala-2.10/printplugin_2.10-1.0.jar",
       resolvers           ++= Seq(
         Classpaths.typesafeSnapshots,
         "snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
