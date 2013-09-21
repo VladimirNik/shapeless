@@ -161,7 +161,7 @@ object ShapelessBuild extends Build {
         "-deprecation",
         "-unchecked"),
       //scalacOptions += "-Xplugin:/home/vlad/scala-projects/printPlugin/target/scala-2.10/printplugin_2.10-1.0.jar",
-      libraryDependencies += compilerPlugin("org.scala-lang.plugins" %% "printplugin" % "0.2.0"),
+      libraryDependencies += compilerPlugin("org.scala-lang.plugins" % "printplugin_2.10" % "0.2.0"),
       scalacOptions += "-P:printplugin:oversrc",
       resolvers           ++= Seq(
         Classpaths.typesafeSnapshots,
